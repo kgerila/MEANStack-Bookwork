@@ -13,7 +13,7 @@
 # 브랜치 설명 
 
 ## Angular.js
-  - angular_step01_making_index
+  - [angular_step01_making_index](https://github.com/MEAN-STACK/MEANStack-Bookwork/tree/angular_step01_making-index)
 
 ## Node.js / Express.js
 
