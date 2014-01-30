@@ -14,44 +14,49 @@ angular.module('meanstackApp', [
       .state('main', {
         url: '/',
         templateUrl: 'views/main.html',
-        controller: ''
+        controller: 'MainCtrl'
       })
       .state('login', {
         url: '/login',
         templateUrl: 'views/login.html',
-        controller: ''
+        controller: 'LoginCtrl'
       })
       .state('mylevel', {
         url: '/mylevel',
         templateUrl: 'views/mylevel.html',
-        controller: ''
+        controller: 'MyLevelCtrl'
       })
       .state('myqna', {
         url: '/myqna',
         templateUrl: 'views/myqna.html',
-        controller: ''
+        controller: 'MyQnaCtrl'
       })
       .state('myfollowing', {
         url: '/myfollowing/{userId:[0-9]{1,4}}',
         templateUrl: 'views/myfollowing.html',
-        controller: ''
+        controller: 'MyFollowingCtrl'
       })
       .state('techarea', {
         url: '/techarea/{techId:[0-9]{1,4}}',
         templateUrl: 'views/techarea.html',
-        controller: ''
+        controller: 'TechAreaCtrl'
       })
       .state('gururanking', {
         url: '/gururanking',
         templateUrl: 'views/gururanking.html',
-        controller: ''
+        controller: 'RankingCtrl'
       })
       .state('gurumember', {
         url: '/gurumember',
         templateUrl: 'views/gurumember.html',
-        controller: ''
+        controller: 'MemberCtrl'
       });
 
   }])
+.run(['$rootScope', '$state', '$stateParams', 
+  function ($rootScope, $state, $stateParams) {
+    $rootScope.$state = $state;
+    $rootScope.$stateParams = $stateParams;
+  }]);
 
 

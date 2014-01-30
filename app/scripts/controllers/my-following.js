@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('meanstackApp')
-  .controller('GurumemberCtrl', function ($scope) {
+  .controller('MyFollowingCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
