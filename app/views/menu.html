@@ -85,6 +85,17 @@
         </ul>
       </li>
     </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li ng-hide="false">
+        <a href="#" ui-sref="login">Login</a>
+      </li>
+      <li ng-show="false">
+        <a href="#" ng-click="logout()">
+          [{{ currentUser.name }}] Logout
+        </a>
+      </li>
+    </ul>
+
   </div>
-  
 </div>
