@@ -17,7 +17,7 @@ angular.module('meanstackApp')
     
     this.login = function(params, successCallback) {
     	// 1) create request
-    	var request = msRequestFactory.createRequest('authentication', 'login', '');
+    	var request = msRequestFactory.createRequest('user', 'login', '');
     	
     	// 2) set params
     	request.params = {

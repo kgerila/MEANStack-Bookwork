@@ -87,10 +87,10 @@
     </ul>
 
     <ul class="nav navbar-nav navbar-right">
-      <li ng-hide="false">
+      <li ng-hide="SessionInfo.isUserSignedIn()">
         <a href="#" ui-sref="login">Login</a>
       </li>
-      <li ng-show="false">
+      <li ng-show="SessionInfo.isUserSignedIn()">
         <a href="#" ng-click="logout()">
           [{{ currentUser.name }}] Logout
         </a>
