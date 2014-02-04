@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('meanstackApp')
-  .service('SessionInfo', function SessionInfo() {
+  .service('SessionInfo', ['$rootScope', function SessionInfo($rootScope) {
   	
     this.localStorageKey = "__SESSION_INFO";
     try {
@@ -30,4 +30,4 @@ angular.module('meanstackApp')
       $rootScope.currentUser = {};
       localStorage.setItem(this.localStorageKey, JSON.stringify($rootScope.currentUser));
     };
-  });
+  }]);
